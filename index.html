@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Notice Board</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginSection" class="center-box">
+<h2>Admin Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button id="loginBtn">Login</button>
+</div>
+
+
+<!-- DASHBOARD -->
+<div id="dashboardSection" class="hidden">
+
+<div class="top-bar">
+<h2>Digital Notice Board</h2>
+<button id="logoutBtn" class="logout-btn">Logout</button>
+</div>
+
+<div class="container">
+
+<!-- ADD NOTICE -->
+<div class="card">
+
+<h3>Add / Edit Notice</h3>
+
+<input type="text" id="title" placeholder="Notice Title">
+
+<textarea id="content" placeholder="Notice Content"></textarea>
+
+<select id="category">
+<option>General</option>
+<option>Exam</option>
+<option>Event</option>
+</select>
+
+<div class="date-group">
+
+<div>
+<label>Publish Date</label>
+<input type="date" id="publishDate">
+</div>
+
+<div>
+<label>Expiry Date</label>
+<input type="date" id="expiryDate">
+</div>
+
+</div>
+
+<button id="publishBtn">Publish Notice</button>
+
+</div>
+
+
+<!-- LIVE NOTICES -->
+<div class="card">
+
+<h3>Live Notices</h3>
+<div id="noticeBoard"></div>
+
+</div>
+
+
+<!-- SCHEDULED -->
+<div class="card">
+
+<h3>Scheduled Notices</h3>
+<div id="scheduledBoard"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
